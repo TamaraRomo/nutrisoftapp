@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ConsultaActivity">
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/button_shape"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:text="@string/volver"
+        android:textColor="#212121" />
+
+    <TextView
+        android:id="@+id/tvConsultas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/consultas"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/button_shape_light"
+        android:paddingVertical="16dp"
+        android:elevation="4dp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/btnVolver"/>
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvConsultas"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:background="@drawable/button_shape_light"
+        android:drawableStart="?android:attr/actionModeFindDrawable"
+        android:drawablePadding="12dp"
+        android:elevation="2dp"
+        android:hint="@string/buscar_cliente_hora"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textColorHint="#004D40"
+        tools:ignore="TextFields" />
+
+    <LinearLayout
+        android:id="@+id/llFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSearch"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <Button
+            android:id="@+id/btnPendientes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pendientes"
+            android:background="@drawable/button_shape"
+            android:textColor="#000000"
+            android:layout_marginEnd="2dp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btnFinalizadas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/finalizadas"
+            android:background="@drawable/button_shape_pink"
+            android:textColor="#000000"
+            android:layout_marginStart="2dp"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewConsultas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llFilters"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="80dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            tools:ignore="UselessLeaf">
+
+            <!-- Bloques de contenido para consultas, repetir según sea necesario -->
+            <!-- Primer item de consulta con icono de persona estándar de Android -->
+            <!-- Se repite este bloque para cada uno de los tres ítems -->
+            <!-- Asegúrate de cambiar los IDs y los textos si es necesario para evitar conflictos o confusiones -->
+            <!-- Primer item de consulta -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#EFEFEF"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:src="@android:drawable/ic_menu_myplaces"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/paciente_nombrecliente"
+                        android:textAppearance="?android:attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hora"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#EFEFEF"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:src="@android:drawable/ic_menu_myplaces"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/paciente_nombrecliente"
+                        android:textAppearance="?android:attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hora"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#EFEFEF"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:src="@android:drawable/ic_menu_myplaces"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/paciente_nombrecliente"
+                        android:textAppearance="?android:attr/textAppearanceListItem" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hora"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnNuevaConsulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/button_shape_light"
+        android:text="@string/nueva_consulta"
+        android:textColor="#212121"
+        tools:ignore="RelativeOverlap" />
+
+    <!-- BottomNavigationView en la parte inferior -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <!-- NavHostFragment arriba del BottomNavigationView -->
+    <fragment
+        android:id="@+id/nav_host_fragment_activity_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/mobile_navigation"
+        android:layout_above="@id/navView"
+        tools:ignore="FragmentTagUsage" />
+</RelativeLayout>
+
+

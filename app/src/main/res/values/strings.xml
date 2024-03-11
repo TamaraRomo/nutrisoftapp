@@ -20,4 +20,103 @@
     <string name="registration_failed">El registro ha fallado, intenta nuevamente.</string>
     <string name="accept_terms_conditions">Debes aceptar los Términos y Condiciones para continuar.</string>
 
+
+    <string-array name="menu_options">
+        <item>Dieta</item>
+        <item>
+            Ejercicio
+        </item>
+    </string-array>
+    <string name="titulo_nuevo_cliente">Nuevo cliente</string>
+    <string name="subtitulo_ingreso_datos">Ingreso los siguientes datos</string>
+    <string name="seccion_datos_personales">Datos personales</string>
+    <string name="hint_nombre_completo">Nombre completo</string>
+    <string name="hint_numero_telefono">Número de teléfono</string>
+    <string name="hint_correo_electronico">Correo electrónico</string>
+    <string name="hint_domicilio">Domicilio</string>
+    <string name="seccion_datos_medicos">Datos médicos</string>
+    <string name="hint_tipo_sangre">Tipo de sangre</string>
+    <string name="hint_alergias">Alergias</string>
+    <string name="hint_enfermedades_cronicas">Enfermedades crónicas</string>
+    <string name="hint_tratamiento_medico">Tratamiento médico</string>
+    <string name="texto_boton_finalizar">Finalizar</string>
+
+
+    <!--Login -->
+    <string name="welcome_text">Bienvenido a</string>
+    <string name="nutrisoft">Nutrisoft</string>
+    <string name="email_hint">CORREO ELECTRÓNICO</string>
+    <string name="password_hint">CONTRASEÑA</string>
+    <string name="logo_description">Logo de Nutrisoft</string>
+
+    <!--Register-->
+    <string name="enter_your_data">Ingresa tus datos</string>
+    <string name="full_name_hint">Nombre completo</string>
+    <string name="professional_id_hint">Cédula profesional</string>
+    <string name="phone_hint">Número de teléfono</string>
+    <string name="repeat_password_hint">Repetir Contraseña</string>
+    <string name="accept_terms">Acepto los Términos y Condiciones</string>
+    <string name="register_button">Registrarme</string>
+    <string name="back_button">Atrás</string>
+    <string name="password_login">Contraseña</string>
+    <string name="back">Atrás</string>
+    <string name="registrarme">Registrarme</string>
+    <string name="enter_information">Ingresa tus datos</string>
+    <string name="registro">Registro</string>
+    <string name="terms_and_conditions">Términos y Condiciones</string>
+    <string name="terms_and_conditions_content">
+    "Términos y Condiciones de Nutrisoft\n\n" +
+    "Última actualización: 7 de Marzo del 2024\n\n" +
+
+    "1. Introducción\n" +
+    "Bienvenido a Nutrisoft. Al acceder y utilizar nuestra aplicación, usted acepta cumplir con los siguientes términos y condiciones. Estos términos son aplicables a todos los nutricionistas, usuarios y visitantes de nuestra aplicación.\n\n" +
+
+    "2. Privacidad y Datos Personales\n" +
+    "El respeto a su privacidad es crucial para nosotros. La información personal recopilada a través de Nutrisoft se utiliza para proporcionar y mejorar el servicio. No compartiremos su información con terceros, excepto como se requiere por ley.\n\n" +
+
+    "3. Uso Aceptable\n" +
+    "Nutrisoft está diseñado para apoyar a los profesionales de nutrición y a individuos que buscan mejorar su salud a través de la nutrición. El uso de nuestra aplicación para cualquier propósito ilegal o no autorizado está estrictamente prohibido.\n\n" +
+
+    "4. Propiedad Intelectual\n" +
+    "Todos los contenidos de Nutrisoft, incluyendo textos, gráficos, logos y código fuente, son propiedad exclusiva de [Nombre de la Empresa] y están protegidos por leyes de propiedad intelectual.\n\n" +
+
+    "5. Cambios a los Términos\n" +
+    "Nos reservamos el derecho de modificar estos términos en cualquier momento. Es su responsabilidad revisarlos regularmente para estar al tanto de cualquier cambio.\n\n" +
+
+    "6. Contacto\n" +
+    "Si tiene preguntas o inquietudes acerca de estos términos, por favor contáctenos a través de [tu email/contacto].\n\n" +
+
+    "Al utilizar Nutrisoft, usted reconoce que ha leído y acepta estar vinculado por estos términos y condiciones."
+</string>
+    <string name="profile">Perfil</string>
+    <string name="name">NombreCompleto</string>
+    <string name="change_profile_photo">Cambiar foto de perfil</string>
+    <string name="personal_info">Datos personales</string>
+
+    <string name="address_hint">Domicilio:</string>
+
+
+    <!-- Strings para contentDescription -->
+    <string name="profile_picture_description">Imagen de perfil</string>
+
+
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="lbl_buscar_cliente">Buscar cliente</string>
+    <string name="lbl_nuevo_cliente">Nuevo cliente</string>
+    <string name="lbl_nombrecliente">NombreCliente</string>
+    <string name="lbl_clientes">Clientes</string>
+    <string name="lbl">+</string>
+
+    <string name="title_home">NutriSoft</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="volver">Volver</string>
+    <string name="consultas">Consultas</string>
+    <string name="buscar_cliente_hora">Buscar cliente, hora...</string>
+    <string name="pendientes">Pendientes</string>
+    <string name="finalizadas">Finalizadas</string>
+    <string name="paciente_nombrecliente">Paciente: NombreCliente</string>
+    <string name="hora">Hora:</string>
+    <string name="nueva_consulta">+ Nueva consulta</string>
 </resources>

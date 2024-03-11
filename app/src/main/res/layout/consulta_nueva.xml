@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".RegistroNuevaConsulta">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva Consulta"
+        android:textSize="24sp"
+        android:textColor="#800080"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonSearchUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar Usuario"
+        android:layout_below="@+id/textViewInstructions"
+        android:layout_centerHorizontal="true"
+        android:background="#48994B"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:foreground="?android:selectableItemBackground"
+        android:stateListAnimator="@null"
+        android:outlineAmbientShadowColor="#BCB7D2"
+        android:outlineSpotShadowColor="#BCB7D2"
+        android:clipToOutline="true" />
+
+    <TextView
+        android:id="@+id/textViewInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese los siguientes datos"
+        android:textSize="18sp"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="250dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/buttonSearchUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:calendarTextColor="#800080"
+        android:calendarViewShown="false"
+        android:descendantFocusability="blocksDescendants"
+        android:spinnersShown="true" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="241dp"
+        android:layout_height="195dp"
+        android:layout_below="@id/datePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:timePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker"
+        android:layout_alignParentStart="true"
+        android:text="Atrás"
+        android:background="#48994B"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:foreground="?android:selectableItemBackground"
+        android:stateListAnimator="@null"
+        android:outlineAmbientShadowColor="#BCB7D2"
+        android:outlineSpotShadowColor="#BCB7D2"
+        android:clipToOutline="true" />
+
+    <Button
+        android:id="@+id/buttonFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker"
+        android:layout_alignParentEnd="true"
+        android:text="Finalizar"
+        android:background="#48994B"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:foreground="?android:selectableItemBackground"
+        android:stateListAnimator="@null"
+        android:outlineAmbientShadowColor="#BCB7D2"
+        android:outlineSpotShadowColor="#BCB7D2"
+        android:clipToOutline="true" />
+
+</RelativeLayout>

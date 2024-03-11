@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="16dp">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_nuevo_cliente"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#48994B"
+            android:gravity="center"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitulo_ingreso_datos"
+            android:gravity="center"
+            android:paddingBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seccion_datos_personales"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"/>
+
+        <!-- Nombre completo input -->
+        <EditText
+            android:id="@+id/etNombreCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_nombre_completo"
+            android:inputType="textPersonName"
+            android:autofillHints="name"
+            android:alpha="0.5"
+            android:background="@drawable/rectangle_color"/>
+
+
+        <!-- Número de teléfono input -->
+        <EditText
+            android:id="@+id/etNumeroTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_numero_telefono"
+            android:inputType="phone"
+            android:autofillHints="phone"
+            android:background="@drawable/rectangle_color"
+            android:alpha="0.5"/>
+
+        <!-- Correo electrónico input -->
+        <EditText
+            android:id="@+id/etCorreoElectronico"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_correo_electronico"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/rectangle_color"
+            android:alpha="0.5"/>
+
+        <!-- Domicilio input -->
+        <EditText
+            android:id="@+id/etDomicilio"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_domicilio"
+            android:inputType="textPostalAddress"
+            android:autofillHints="postalAddress"
+            android:background="@drawable/rectangle_color"
+            android:alpha="0.5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/seccion_datos_medicos"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+
+        <!-- Tipo de sangre input -->
+        <EditText
+            android:id="@+id/etTipoSangre"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_tipo_sangre"
+            android:inputType="text"
+            android:autofillHints=""
+            android:background="@drawable/rectangle_color"
+            android:alpha="0.5"/>
+
+        <EditText
+            android:id="@+id/etAlergias"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_alergias"
+            android:inputType="text"
+            android:background="@drawable/rectangle_color"
+            android:autofillHints=""
+            android:alpha="0.5"/>
+
+        <!-- Enfermedades crónicas input -->
+        <EditText
+            android:id="@+id/etEnfermedadesCronicas"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rectangle_color"
+            android:hint="@string/hint_enfermedades_cronicas"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:alpha="0.5"/>
+
+        <!-- Tratamiento médico input -->
+        <EditText
+            android:id="@+id/etTratamientoMedico"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rectangle_color"
+            android:hint="@string/hint_tratamiento_medico"
+            android:inputType="text"
+            android:autofillHints=""
+            android:alpha="0.5"/>
+
+        <!-- Finalizar button -->
+        <Button
+            android:id="@+id/btnFinalizar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#4CAF50"
+            android:text="@string/texto_boton_finalizar" />
+
+    </LinearLayout>
+</ScrollView>

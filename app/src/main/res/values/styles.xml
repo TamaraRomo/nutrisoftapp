@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="txtSolidRounded">
+
+        <item name="android:fontFamily">@font/signika</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+
+    </style>
+    <style name="txtSignikaregular17">
+
+        <item name="android:fontFamily">@font/signika</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="etSolidRoundedLeftCorner">
+
+        <item name="android:fontFamily">@font/signika</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+
+    </style>
+    <style name="groupStylewhite_A700_01">
+    </style>
+    <style name="groupStylegray_800cornerRadius">
+    </style>
+    <style name="txtSignikaregular22">
+
+        <item name="android:fontFamily">@font/signika</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtJockeyOneregular40">
+
+        <item name="android:fontFamily">@font/jockey_one</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtSolidRounded_1">
+
+        <item name="android:fontFamily">@font/jockey_one</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+    <style name="txtSignikaregular16">
+
+
+
+        <item name="android:fontFamily">@font/signika</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+
+    </style>
+
+    <style name="ButtonGreenStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">#48994B</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>

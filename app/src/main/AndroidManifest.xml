@@ -37,6 +37,43 @@
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Nutrisoftapp"/>
+        <activity
+            android:name=".DatosClientes"
+            android:exported="true"
+            android:theme="@style/Theme.Nutrisoftapp"/>
+        <activity
+            android:name=".ClienteActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Nutrisoftapp"/>
+        <activity
+            android:name=".DietaActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Nutrisoftapp"/>
+        <activity
+            android:name=".HistorialAvance"
+            android:exported="true"
+            android:theme="@style/Theme.Nutrisoftapp"/>
+        <activity
+            android:name=".NuevoCliente"
+            android:exported="true"
+            android:theme="@style/Theme.Nutrisoftapp"/>
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Nutrisoftapp"/>
+        <activity
+            android:name=".RegistroNuevaConsulta"
+            android:exported="true"
+            android:theme="@style/Theme.Nutrisoftapp"/>
+        <activity
+            android:name=".Tyc_activity"
+            android:exported="true"
+            android:theme="@style/Theme.Nutrisoftapp"/>
+        <activity
+            android:name=".ConsultaActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Nutrisoftapp"/>
+
     </application>
 
 </manifest>

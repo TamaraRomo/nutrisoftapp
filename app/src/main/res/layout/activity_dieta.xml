@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Meta del paciente -->
+    <LinearLayout
+        android:id="@+id/metaContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <!-- EditText para la meta -->
+        <TextView
+            android:id="@+id/metaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meta: " />
+
+        <EditText
+            android:id="@+id/editTextMeta"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="Ingrese la meta"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- Menú desplegable (Spinner) -->
+    <Spinner
+        android:id="@+id/menuSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Contenedor para la vista de dieta -->
+    <LinearLayout
+        android:id="@+id/dietaContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuSpinner"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#C8E6C9"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="20dp"
+        android:visibility="visible">
+
+        <!-- Lista de alimentos de la dieta -->
+        <ListView
+            android:id="@+id/dietListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"/>
+
+        <!-- Sección Desayuno -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Desayuno"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Ingrese la comida del desayuno" />
+
+        <!-- Sección Almuerzo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Almuerzo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la comida del almuerzo"
+            android:layout_marginTop="5dp"/>
+
+        <!-- Sección Colaciones -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colaciones"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la comida de las colaciones"
+            android:layout_marginTop="5dp"/>
+
+        <!-- Sección Cena -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cena"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la comida de la cena"
+            android:layout_marginTop="5dp"/>
+
+        <!-- Sección Otros -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otros"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese información adicional"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <!-- Contenedor para la vista de ejercicios -->
+    <LinearLayout
+        android:id="@+id/ejerciciosContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuSpinner"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Lista de ejercicios -->
+        <ListView
+            android:id="@+id/exerciseListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"/>
+
+        <!-- EditText para ejercicios -->
+        <EditText
+            android:id="@+id/ejerciciosEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese los ejercicios"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</RelativeLayout>
