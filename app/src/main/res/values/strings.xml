@@ -118,5 +118,5 @@
     <string name="finalizadas">Finalizadas</string>
     <string name="paciente_nombrecliente">Paciente: NombreCliente</string>
     <string name="hora">Hora:</string>
-    <string name="nueva_consulta">+ Nueva consulta</string>
+    <string name="nueva_consulta">Nueva consulta</string>
 </resources>
