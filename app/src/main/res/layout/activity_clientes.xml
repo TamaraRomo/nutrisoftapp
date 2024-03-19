@@ -1,48 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/linearClientes"
-        style="@style/groupStylewhite_A700_01"
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/signika"
+        android:text="Clientes"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/busqueda_clientes"
+        android:fontFamily="@font/signika"
+        android:iconifiedByDefault="false"
+        android:queryHint="Buscar cliente"
+        android:searchHintIcon="@drawable/serach_cliente"
+        android:searchIcon="@drawable/img_iconly_light_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="64dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="295dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="11dp"
-                android:layout_height="51dp"
-                android:layout_weight="1"
-                />
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/buttonClient"
-                android:layout_width="200dp"
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Datos Cliente" />
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/clientes_card"
+                app:cardCornerRadius="35dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView">
 
-            <Button
-                android:id="@+id/buttonNuevo"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Nuevo Cliente" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/clientes_card"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="0dp"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="16dp">
 
+                    <!-- Icono de persona -->
+                    <ImageView
+                        android:id="@+id/iconoCliente"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="#FFEDC6"
+                        android:contentDescription="Icono de persona"
+                        app:srcCompat="@drawable/profile" />
+
+                    <TextView
+                        android:id="@+id/txtClienteNombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="75dp"
+                        android:fontFamily="@font/signika"
+                        android:text="NombreCliente"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/buttonClient"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_clientes"
+                        android:onClick="irAPerfil"
+                        android:src="@drawable/img_iconly_light_arrow_white_a700_01"
+                        android:text="Ver perfil" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonNuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_salir"
+        android:drawableStart="@drawable/anadir"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/signika"
+        android:gravity="center_vertical"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:text="Nuevo cliente"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
 
-
-    </LinearLayout>
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
